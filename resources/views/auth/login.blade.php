@@ -5,7 +5,7 @@
                 <div class="flex items-center">
                     <div class="w-1/2 flex justify-center">
                         <div class="shadow-2xl shadow-gray-700 rounded-lg">
-                            <h2 class= "pt-2 font-bold text-2xl flex justify-center font-serif" >Iniciar</h2>
+                            <h2 class= "pt-2 font-bold text-2xl flex justify-center font-serif">Iniciar</h2>
 
                                     <form class="px-8 pb-4" method="POST" action="{{ route('login') }}">
                                         @csrf
