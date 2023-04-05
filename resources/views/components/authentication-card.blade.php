@@ -3,5 +3,6 @@
         {{ $logo }}
     </div>
 
-    
+        {{ $slot }}
+    </div>
 </div>
