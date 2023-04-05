@@ -4,11 +4,11 @@
                 <x-validation-errors class="mb-4" />
                 <div class="flex items-center">
                     <div class="w-1/2 flex justify-center">
-                        <div>
-                            <h2 class="text-2xl flex justify-center">Crear tu cuenta</h2>
+                        <div class="shadow-2xl shadow-gray-700">
+                            <h2 class="pt-2 font-bold text-2xl flex justify-center font-serif">Crear tu cuenta</h2>
                                 <div class="mt-4">
                                     
-                                        <form method="POST" action="{{ route('register') }}">
+                                        <form class="px-8 pb-8" method="POST" action="{{ route('register') }}">
                                             @csrf
 
                                             <div>
@@ -64,8 +64,8 @@
                                 </div>
                         </div>
                     </div>                                    
-                        <div class="w-1/2 py-8">
-                            <img class="rounded-lg" src="assets/imagen.jpg" alt="">
+                        <div class="w-1/2 p-8">
+                            <img class="w-3/4 rounded-lg shadow-2xl shadow-gray-700" src="assets/imagen.jpg" alt="">
                         </div>
                 </div>
         </x-slot>

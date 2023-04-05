@@ -4,10 +4,10 @@
             <x-slot name="logo">
                 <div class="flex items-center">
                     <div class="w-1/2 flex justify-center">
-                        <div class="shadow-2xl shadow-gray-700 rounded-lg">
+                        <div class="shadow-2xl shadow-gray-700">
                             <h2 class= "pt-2 font-bold text-2xl flex justify-center font-serif">Iniciar</h2>
 
-                                    <form class="px-8 pb-4" method="POST" action="{{ route('login') }}">
+                                    <form class="px-8 pb-8" method="POST" action="{{ route('login') }}">
                                         @csrf
 
                                         <div class= "mt-4">
@@ -39,11 +39,13 @@
                                                                 {{ __('Iniciar Sesión') }}
                                                             </x-button>
                                                             
-                                                                <div class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150 ml-4">
-                                                                    <a class="shadow rounded-lg" href="{{route ('register')}} ">Registrarse</a>
-                                                                </div>
-                                                            
                                                     </div>
+                                                    <div class="float-right m-4 me-0">
+                                                        <x-button class="inline-flex items-center px-6 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 
+                                                            focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150 ml-4">
+                                                            <a class="shadow rounded-lg" href="{{route ('register')}} ">Registrarse</a>
+                                                        </x-button>
+                                                    </div>                                                
                                     </form>
                                         <x-validation-errors class="mb-4" />
                                         @if (session('status'))
