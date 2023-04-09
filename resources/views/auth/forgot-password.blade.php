@@ -18,26 +18,24 @@
         @endif
 
         <x-validation-errors class="mb-4" />
-        <div class="shadow-2xl shadow-gray-700">
-            <div class="mt-4">
-                <form class="px-8 pb-8"method="POST" action="{{ route('password.email') }}">
-                @csrf
+            <div class="shadow-2xl shadow-gray-700">
+                <div class="mt-4">
+                    <form class="px-8 pb-8"method="POST" action="{{ route('password.email') }}">
+                    @csrf
 
-                    <div class="block">
-                        <x-label for="email" value="{{ __('Correo') }}" />
-                        <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-                    </div>
+                        <div class="block">
+                            <x-label for="email" value="{{ __('Correo') }}" />
+                            <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+                        </div>
 
-                    <div class="flex items-center justify-end mt-4">
-                        <x-button>
-                            {{ __('Restablecimiento de Contraseña') }}
-                        </x-button>
-                    </div>
-                </form>
-
+                        <div class="flex items-center justify-end mt-4">
+                            <x-button>
+                                {{ __('Restablecimiento de Contraseña') }}
+                            </x-button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        
-        </div>
         
     </x-authentication-card>
 </x-guest-layout>
