@@ -1,3 +1,8 @@
+/*
+archivos creados para ser utilizados para el sistema, no son necesarios tocarlos
+
+
+*/
 <?php
 
 use Illuminate\Support\Facades\Facade;
