@@ -30,7 +30,7 @@
 
                     <div class="flex items-center justify-end mt-4">
                         <x-button>
-                            {{ __('restablecimiento de contraseña') }}
+                            {{ __('Restablecimiento de Contraseña') }}
                         </x-button>
                     </div>
                 </form>
