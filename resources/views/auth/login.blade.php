@@ -1,6 +1,5 @@
 <x-guest-layout>
         <x-authentication-card>
-        
             <x-slot name="logo">
                 <div class="flex items-center">
                     <div class="w-1/2 flex justify-center">
