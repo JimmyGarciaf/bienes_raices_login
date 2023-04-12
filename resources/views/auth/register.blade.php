@@ -23,12 +23,12 @@
 
                                             <div class="mt-4">
                                                 <x-label for="password" value="{{ __('Contraseña') }}" />
-                                                <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
+                                                <x-input id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,64}" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
                                             </div>
 
                                             <div class="mt-4">
                                                 <x-label for="password_confirmation" value="{{ __('Confirmar Contraseña') }}" />
-                                                <x-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
+                                                <x-input id="password_confirmation" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,64}" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
                                             </div>
 
                                          @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
